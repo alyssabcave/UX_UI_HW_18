@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/*Navigation Styles*/
+
+.nav-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    
+    font-family: 'Yeseva One', cursive;
+    z-index: 999;
+}
+
+.name{
+    color:#D8977F;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+nav{
+    position: relative;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+nav a {
+    color: #D8977F;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: #014040;
+}
+/*About Me Hero*/
+
+.about-me-hero{
+    display: grid;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "image quote"
+    "image quote"
+}
+
+.about-me-hero-image{
+    grid-area: image;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/garden.png");
+}
+
+.about-me-hero-text{
+    grid-area: quote;
+    background-color: #025373;
+    color: #D8977F;
+    font-family: 'Yeseva One', cursive;
+    justify-content: center;
+    text-align: center;
+    font-size: 54px;
+}
+
+p{
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.collage{
+    display: grid;
+    margin-top: 90px;
+    height: 500px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "photo-one photo-two photo-three photo-four";
+}
+
+#photo1{
+    grid-area: photo-one;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/Screen Shot 2020-04-05 at 2.33.24 PM.png");
+}
+
+#photo2{
+    grid-area: photo-two;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/Screen Shot 2020-04-05 at 2.34.19 PM.png");
+}
+
+#photo3{
+    grid-area: photo-three;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/Screen Shot 2020-04-05 at 2.35.07 PM.png");
+}
+
+#photo4{
+    grid-area: photo-four;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/garden.png");
+}
