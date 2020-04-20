@@ -1,0 +1,155 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+
+/*Navigation Styles*/
+
+.nav-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    
+    font-family: 'Yeseva One', cursive;
+    z-index: 999;
+}
+
+.name{
+    color:#D8977F;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+nav{
+    position: relative;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+nav a {
+    color: #D8977F;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: #014040;
+}
+
+
+.contact-me-image{
+    margin-top: 40px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    background-image: url(../images/hero\ copy.png);
+    background-repeat: no-repeat;
+}
+
+h1{
+    color:#D8977F;
+    font-size: 30px;
+    font-family: 'Yeseva One', cursive;
+    text-align:center;
+    margin-top:70px;
+}
+
+
+.insta{
+    margin-top:50px;
+    margin-left:200px;
+    margin-right:200px;
+    display:grid;
+    height:100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "instapic instauser"
+}
+
+.insta-logo{
+    grid-area: instapic;
+}
+
+.insta-username{
+    margin: 40px;
+    grid-area: instauser;
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.linkedin{
+    margin-top:90px;
+    margin-left:200px;
+    margin-right:200px;
+    display:grid;
+    height:100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "linkedinpic linkedinuser"
+}
+
+.linkedin-logo{
+    grid-area: linkedinpic;
+}
+
+.linkedin-username{
+    margin: 20px;
+    grid-area: linkedinuser;
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.email{
+    margin-top:90px;
+    margin-left:200px;
+    margin-right:200px;
+    display:grid;
+    height:100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "emailpic emailuser"
+}
+
+.email-logo{
+    grid-area: emailpic;
+}
+
+.email-username{
+    margin:30px;
+    grid-area: emailuser;
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    text-align: center;
+}
