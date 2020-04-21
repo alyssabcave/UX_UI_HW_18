@@ -58,16 +58,7 @@ nav a:hover{
     color: #014040;
 }
 
-
-.contact-me-image{
-    margin-top: 40px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    height:300px;
-    background-image: url(../images/hero\ copy.png);
-    background-repeat: no-repeat;
-}
+/*Contact Me*/
 
 h1{
     color:#D8977F;
@@ -79,12 +70,12 @@ h1{
 
 
 .insta{
-    margin-top:50px;
-    margin-left:200px;
-    margin-right:200px;
     display:grid;
+    right: -480px;
+    margin-top: 50px;
+    position:relative;
     height:100px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 1fr;
     grid-template-areas:
     "instapic instauser"
@@ -92,25 +83,29 @@ h1{
 
 .insta-logo{
     grid-area: instapic;
+    background-image: url(../images/insta.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
 }
 
 .insta-username{
-    margin: 40px;
     grid-area: instauser;
+    margin: 40px;
     color: #025373;
     font-family: 'Lora', serif;
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
 }
 
 
 .linkedin{
-    margin-top:90px;
-    margin-left:200px;
-    margin-right:200px;
     display:grid;
+    right: -480px;
+    margin-top: 50px;
+    position:relative;
     height:100px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 1fr;
     grid-template-areas:
     "linkedinpic linkedinuser"
@@ -118,24 +113,28 @@ h1{
 
 .linkedin-logo{
     grid-area: linkedinpic;
+    background-image: url(../images/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
 }
 
 .linkedin-username{
-    margin: 20px;
     grid-area: linkedinuser;
     color: #025373;
     font-family: 'Lora', serif;
-    font-size: 40px;
+    font-size: 34px;
+    margin: 40px;
     text-align: center;
 }
 
 .email{
-    margin-top:90px;
-    margin-left:200px;
-    margin-right:200px;
     display:grid;
+    right: -480px;
+    margin-top: 90px;
+    position:relative;
     height:100px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 100px;
     grid-template-rows: 1fr;
     grid-template-areas:
     "emailpic emailuser"
@@ -143,13 +142,37 @@ h1{
 
 .email-logo{
     grid-area: emailpic;
+    background-image: url(../images/email.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
 }
 
 .email-username{
-    margin:30px;
+    margin:40px;
     grid-area: emailuser;
     color: #025373;
     font-family: 'Lora', serif;
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+
+.email, .insta, .linkedin{
+   right: -40px;
+}
+
+.insta-username{
+    font-size: 20px;
+}
+
+.linkedin-username{
+    font-size: 20px;
+}
+
+.email-username{
+    font-size: 20px;
+}
 }

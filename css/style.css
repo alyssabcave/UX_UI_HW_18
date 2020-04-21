@@ -443,3 +443,100 @@ h2{
   .footer a:hover{
       color:#D8977F;
   }
+
+  @media only screen and (max-width: 600px){
+
+  .name{
+      font-size: 24px;
+  }
+
+  nav a{
+      font-size:20px;
+  }
+
+  .about-me-hero-text{
+      font-size: 38px;
+  }
+
+  p{
+      font-size: 20px;
+  }
+
+  .collage{
+    display: grid;
+    margin-top: 90px;
+    height: 500px;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "photo-one photo-two photo-three photo-four";
+}
+
+h1{
+    margin-top: 50px;
+}
+
+.my-skills{
+    display: grid;
+    margin-top: 50px;
+    height: 400px;
+    margin-right: 60px;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "skill-1 skill-2"
+    "skill-3 skill-4"
+    "skill-5 skill-6"
+    "Tools Tools";
+}
+
+.fav-books{
+    display: grid;
+    margin-top: 50px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "book-1 book-2" 
+    "book-3 book-4";
+}
+
+.fav-music{
+    display: grid;
+    margin-top: 50px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "music-1 music-2"
+    "music-3 music-4";
+}
+
+.fav-podcasts{
+    display: grid;
+    margin-top: 50px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "podcast-1 podcast-2"
+    "podcast-3 podcast-4";
+}
+
+.footer a{
+    font-size: 14px;
+}
+
+
+}
